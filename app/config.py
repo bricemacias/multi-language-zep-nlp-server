@@ -20,11 +20,6 @@ class Settings(BaseSettings):
     log_format: str = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     log_app_name: str = "zep-nlp"
     server_port: int
-    embeddings_device: ComputeDevices
-    embeddings_messages_enabled: bool
-    embeddings_documents_enabled: bool
-    embeddings_messages_model: str
-    embeddings_documents_model: str
     nlp_spacy_model: str
 
     class Config:

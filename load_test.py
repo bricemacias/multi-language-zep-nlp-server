@@ -23,9 +23,3 @@ class ApiUser(HttpUser):
         headers = {"Content-Type": "application/json"}
         data = {"texts": [{"uuid": str(uuid.uuid4()), "text": text}]}
         self.client.post("/entities", data=json.dumps(data), headers=headers)
-
-    @task
-    def post_embeddings(self):
-        headers = {"Content-Type": "application/json"}
-        data = {"documents": [{"text": text}]}
-        self.client.post("/embeddings", data=json.dumps(data), headers=headers)
