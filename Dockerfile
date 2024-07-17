@@ -1,7 +1,7 @@
 FROM python:3.11.3-bullseye as builder
 
 ENV WEB_CONCURRENCY 2
-ENV LANGUAGE_MODEL en_core_web_sm
+ENV LANGUAGE_MODEL xx_ent_wiki_sm
 
 ENV \
     PYTHONDONTWRITEBYTECODE=1 \
