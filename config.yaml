@@ -1,5 +1,5 @@
 log_level: info
 server:
-  port: 5557
+  port: 8080
 nlp:
-  spacy_model: en_core_web_sm
+  spacy_model: xx_ent_wiki_sm
